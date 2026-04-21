@@ -7,10 +7,10 @@ const team6 = {name: 'Argentina National Team', city: 'N/A', country: 'Argentina
 const team7 = {name: 'Atletico Madrid', city: 'Madrid', country: 'Spain', topscorers: ['Aragonés','Griezmann','Torez'],WorldwideFans: 400}
 const teams = [team1, team2, team3, team4, team5, team6, team7];
 
-db.collection("teams").doc("9zFqNasEXltkitiDtcTP").set(team1);
-db.collection("teams").doc("zEJqkqdCjMNeTfyBzFJB").set(team2);
-db.collection("teams").doc("pCPr0UqTwAuVxXWBFNYu").set(team3);
-db.collection("teams").doc("lYkkq8XnKu3R5K6uU9fN").set(team4);
-db.collection("teams").doc("EnH7zhwJ8PhIfXL3ohXD").set(team5);
-db.collection("teams").doc("wmWYIuIwp4geT9JvApkd").set(team6);
-db.collection("teams").doc("ogJWOVWa0AWREvsLWY0Y").set(team7);
+db.collection("teams").doc("realMadrid").set(team1);
+db.collection("teams").doc("barcelona").set(team2);
+db.collection("teams").doc("manUnited").set(team3);
+db.collection("teams").doc("manCity").set(team4);
+db.collection("teams").doc("brazil").set(team5);
+db.collection("teams").doc("argentina").set(team6);
+db.collection("teams").doc("atleticoMadrid").set(team7);
