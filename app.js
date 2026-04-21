@@ -103,3 +103,47 @@ db.collection("teams")
 
     showResults("Ronaldo / Messi / Maradona teams", teams);
   });
+  db.collection("teams").doc("realMadrid").update({
+  name: "Real Madrid FC",
+  WorldwideFans: 811
+});
+db.collection("teams").doc("barcelona").update({
+  name: "FC Barcelona",
+  WorldwideFans: 747
+});
+db.collection("teams").doc("realMadrid").update({
+  topscorers: firebase.firestore.FieldValue.arrayRemove("Hazard")
+});
+
+db.collection("teams").doc("realMadrid").update({
+  topscorers: firebase.firestore.FieldValue.arrayUnion("Crispo")
+});
+db.collection("teams").doc("barcelona").update({
+  topscorers: firebase.firestore.FieldValue.arrayRemove("Puyol")
+});
+
+db.collection("teams").doc("barcelona").update({
+  topscorers: firebase.firestore.FieldValue.arrayUnion("Deco")
+});
+const colorRM = {
+  home: "White",
+  away: "Black"
+};
+
+const colorBarca = {
+  home: "Red",
+  away: "Gold"
+};
+db.collection("teams").doc("realMadrid").update({
+  color: colorRM
+});
+
+db.collection("teams").doc("barcelona").update({
+  color: colorBarca
+});
+db.collection("teams").doc("realMadrid").update({
+  "color.away": "Purple"
+});
+db.collection("teams").doc("barcelona").update({
+  "color.away": "Pink"
+});
