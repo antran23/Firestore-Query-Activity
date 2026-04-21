@@ -1,0 +1,1 @@
+const team1 = {name: 'Real Madrid', city: 'Madrid', country: 'Spain', topscorers: ['Ronaldo','Benzema','Hazard'],WorldwideFans: 798}
