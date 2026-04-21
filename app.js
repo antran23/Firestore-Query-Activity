@@ -7,9 +7,3 @@ const team6 = {name: 'Argentina National Team', city: 'N/A', country: 'Argentina
 const team7 = {name: 'Athletico Madrid', city: 'Madrid', country: 'Spain', topscorers: ['Aragonés','Griezmann','Torez'],WorldwideFans: 400}
 const teams = [team1, team2, team3, team4, team5, team6, team7];
 
-db.collection('teams').add(team2)
-db.collection('teams').add(team3)
-db.collection('teams').add(team4)
-db.collection('teams').add(team5)
-db.collection('teams').add(team6)
-db.collection('teams').add(team7)

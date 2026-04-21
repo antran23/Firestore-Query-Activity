@@ -29,12 +29,12 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 let auth = firebase.auth();
       let db = firebase.firestore();
 
       // define a storage reference
       let ref = firebase.storage().ref();</script>
-<script src="app.js" type="module"></script>
+<script src="app.js"></script>
 </body>
 </html>
